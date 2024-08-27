@@ -6,7 +6,7 @@ export default function App() {
         <Header />
         {/* ==== Project layout */}
         <main className="">
-            <div className="">Hero component</div>
+            <div className="h-[200vh]">Hero component</div>
             <div>usps</div>
             <div className="">3 col layout</div>
             <div className="">Carousel with posters</div>
