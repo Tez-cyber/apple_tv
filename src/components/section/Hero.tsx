@@ -1,7 +1,12 @@
+import { Container } from "../Container"
 
 export const Hero = () => {
-  return (
-    <div>Hero</div>
-  )
+    return (
+        <div className="h-[200vh]">
+            <Container>
+                Hero component
+            </Container>
+        </div>
+    )
 }
 

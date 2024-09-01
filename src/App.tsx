@@ -7,9 +7,6 @@ export default function App() {
       <Header />
       {/* ==== Project layout */}
       <main className="">
-        <div className="h-[200vh]">
-          <Container>Hero component</Container>
-        </div>
         <div>
           <Container>usps</Container>
         </div>
