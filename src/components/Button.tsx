@@ -7,8 +7,8 @@ type Props = {
 export const Button = ({ children, size = "md" }: Props) => {
     const sizeClass = {
         sm: "text-xs px-2 py-1",
-        md: "text-sm px-3 py-1",
-        lg: "text-lg px-4 py-2"
+        md: "text-sm px-5 py-3",
+        lg: "text-base px-8 py-5"
     }
     return(
         <button 
