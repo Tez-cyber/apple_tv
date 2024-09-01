@@ -1,5 +1,6 @@
 import { FaApple } from "react-icons/fa";
 import { Container } from "./Container";
+import { Button } from "./Button"
 
 const Header = () => {
     return (
@@ -15,6 +16,7 @@ const Header = () => {
             <div className="sticky top-0 bg-bgContrast text-light ">
                 <Container className="flex items-center min-h-11 px-6">
                     Apple Tv+
+                    <Button>Stream now</Button>
                 </Container>
             </div>
         </>
