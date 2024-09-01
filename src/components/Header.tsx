@@ -14,8 +14,8 @@ const Header = () => {
                 </Container>
             </header>
             <div className="sticky top-0 bg-bgContrast text-light ">
-                <Container className="flex items-center min-h-11 px-6">
-                    Apple Tv+
+                <Container className="flex items-center justify-between min-h-11 px-6">
+                    <p className="">Apple Tv+</p>
                     <Button>Stream now</Button>
                 </Container>
             </div>
