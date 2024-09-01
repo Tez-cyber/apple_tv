@@ -5,7 +5,7 @@ type Props = {
 }
 export const Container = ({ children, className }: Props) => {
   return (
-    <div className={twMerge("mx-auto max-w-[120ppx] px-6", className)}>{children}</div>
+    <div className={twMerge("mx-auto max-w-[980px] px-6", className)}>{children}</div>
   )
 }
 
