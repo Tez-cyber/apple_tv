@@ -9,8 +9,10 @@ export default function App() {
       <Header />
       {/* ==== Project layout */}
       <main className="">
-        <Hero />
-        <Usps />
+        <div className="bg-bgDark">
+          <Hero />
+          <Usps />
+        </div>
         <div className="">
           <Container>3 col layout</Container>
         </div>
