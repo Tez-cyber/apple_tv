@@ -15,26 +15,38 @@ export const Hero = () => {
         <div className="h-[300vh] relative bg-bgDark text-light">
             <motion.div
                 style={{ opacity }}
-                ref={videoContainerRef} 
+                ref={videoContainerRef}
                 className="absolute -top-[--header-row-height] left-0 h-[200vh] w-full"
             >
                 <img
-                    className="sticky top-0 h-screen w-full object-cover" 
-                    src="/posters/img-2.jpg" 
-                    alt="Hero section img" 
+                    className="sticky top-0 h-screen w-full object-cover"
+                    src="/posters/img-2.jpg"
+                    alt="Hero section img"
                 />
             </motion.div>
-            <Container className="relative pb-10 z-10 min-h-[--hero-height] flex flex-col justify-end items-start">
-                <h1 className="text-5xl font-bold mb-10">
-                    All Apple Originals. <br />
-                    Only on Apple TV+.
-                </h1>
-                <Button size="lg" className="mb-16">
-                    Stream now
-                </Button>
-                <p className="flex items-center font-semibold">
-                    Watch on the <FaApple /> apple
-                </p>
+            <Container className="relative pb-10 z-10 h-[--hero-height]">
+                <motion.div
+                    className="flex flex-col h-full justify-end items-start"
+                    variants={{
+                        hidden: { opacity: 0 },
+                        visible: { opacity: 1  }
+                    }}
+                    whileInView="visible"
+                    exit="hidden"
+                    animate="hidden"
+                    viewport={{ amount: .95 }}
+                >
+                    <h1 className="text-5xl font-bold mb-10">
+                        All Apple Originals. <br />
+                        Only on Apple TV+.
+                    </h1>
+                    <Button size="lg" className="mb-16">
+                        Stream now
+                    </Button>
+                    <p className="flex items-center font-semibold">
+                        Watch on the <FaApple /> apple
+                    </p>
+                </motion.div>
             </Container>
         </div>
     )
