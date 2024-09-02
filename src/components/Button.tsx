@@ -3,8 +3,9 @@ import { twMerge } from "tailwind-merge"
 type Props = {
     children: React.ReactNode
     size?: "sm" | "md" | "lg"
+    className?: string
 }
-export const Button = ({ children, size = "md" }: Props) => {
+export const Button = ({ children, size = "md", className }: Props) => {
     const sizeClass = {
         sm: "text-xs px-2 py-1",
         md: "text-sm px-5 py-3",
@@ -14,7 +15,8 @@ export const Button = ({ children, size = "md" }: Props) => {
         <button 
             className={twMerge(
                 "bg-light text-textDark rounded-full",
-                sizeClass[size]
+                sizeClass[size],
+                className
             )}>
             {children}
         </button>
