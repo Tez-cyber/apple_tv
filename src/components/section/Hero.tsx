@@ -5,11 +5,15 @@ import { Container } from "../Container"
 export const Hero = () => {
     return (
         <div className="h-[300vh] relative bg-bgDark text-light">
-            <div className="absolute top-0 left-0 w-full">
-                <img src="/posters/img-4.jpg" alt="" />
+            <div className="absolute -top-[--header-row-height] left-0 h-[200vh] w-full">
+                <img 
+                    className="sticky top-0 h-screen w-full object-cover" 
+                    src="/posters/img-2.jpg" 
+                    alt="Hero section img" 
+                />
             </div>
-            <Container className="relative z-10 min-h-[--hero-height] flex flex-col justify-end items-start">
-                <h1 className="text-5xl font-bold">
+            <Container className="relative pb-10 z-10 min-h-[--hero-height] flex flex-col justify-end items-start">
+                <h1 className="text-5xl font-bold mb-10">
                     All Apple Originals. <br />
                     Only on Apple TV+.
                 </h1>
