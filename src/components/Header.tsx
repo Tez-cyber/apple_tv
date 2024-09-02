@@ -6,15 +6,15 @@ const Header = () => {
     return (
         <>
             <header className="bg-bgContrast text-light">
-                <Container className="flex items-center min-h-11 px-6">
-                    <a href="/" className="text-light h-11 flex items-center px-6 -ml-6">
+                <Container className="flex items-center min-h-[--header-row-height] px-6">
+                    <a href="/" className="text-light h-[--header-row-height] flex items-center px-6 -ml-6">
                         <FaApple className="text-[18px]" />
                         <span className="sr-only">Back to Homepage</span>
                     </a>
                 </Container>
             </header>
             <div className="sticky top-0 bg-bgContrast text-light ">
-                <Container className="flex items-center justify-between min-h-11 px-6">
+                <Container className="flex items-center justify-between min-h-[--header-row-height] px-6">
                     <p className="text-xl font-medium">Apple Tv+</p>
                     <Button size="sm">Stream now</Button>
                 </Container>
