@@ -6,6 +6,6 @@
     :root {
         --header-row-height: 44px;
         --header-height: calc(var(--header-row-height)*2);
-        --hero-height: calc(100svh - var(var(--header-height)))
+        --hero-height: calc(100svh - var(--header-height))
     }
 }
