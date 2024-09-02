@@ -12,7 +12,7 @@ export const Hero = () => {
     })
     const opacity = useTransform(scrollYProgress, [0, 0.7, 1], [1, 1, 0])
     return (
-        <div className="h-[300vh] relative bg-bgDark text-light">
+        <div className="relative bg-bgDark text-light">
             <motion.div
                 style={{ opacity }}
                 ref={videoContainerRef}
