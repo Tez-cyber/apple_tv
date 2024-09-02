@@ -2,7 +2,7 @@ import { Container } from "../Container"
 
 export const Usps = () => {
   return (
-    <Container className="text-3xl font-semibold text-light">
+    <Container className="text-4xl font-semibold text-light space-y-12">
         <p>New Apple Originals every month - always ad-free</p>
         <p>
             Stream on the Apple TV app on Apple devices, smart Tvs, consoles, or
