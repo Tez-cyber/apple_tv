@@ -27,7 +27,7 @@ export default {
       xl: "1.31255rem", //== 21px
       "2xl": "1.5rem", //== 24px
       "3xl": "1.75rem", //== 28px
-      "4xl": "2.5rem", //== 40px
+      "4xl": ["2.5rem", "1.1"], //== 40px
       "5xl": ["4.5rem", "1.05"], //== 72px
     },
     extend: {},
