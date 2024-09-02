@@ -1,6 +1,7 @@
 import { Container } from "./components/Container";
 import Header from "./components/Header";
 import { Hero } from "./components/section/Hero";
+import { Usps } from "./components/section/Usps";
 
 export default function App() {
   return (
@@ -9,9 +10,7 @@ export default function App() {
       {/* ==== Project layout */}
       <main className="">
         <Hero />
-        <div>
-          <Container>usps</Container>
-        </div>
+        <Usps />
         <div className="">
           <Container>3 col layout</Container>
         </div>
