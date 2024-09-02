@@ -13,7 +13,7 @@ const Header = () => {
                     </a>
                 </Container>
             </header>
-            <div className="sticky top-0 bg-bgContrast text-light ">
+            <div className="sticky z-20 top-0 bg-bgContrast text-light ">
                 <Container className="flex items-center justify-between min-h-[--header-row-height] px-6">
                     <p className="text-xl font-medium">Apple Tv+</p>
                     <Button size="sm">Stream now</Button>
