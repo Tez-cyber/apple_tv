@@ -1,6 +1,9 @@
+import { Container } from "../Container"
 
 export const VideoCarousel = () => {
-  return (
-    <div>Video-carousel</div>
-  )
+    return (
+        <div className="">
+            <Container>Carousel with posters</Container>
+        </div>
+    )
 }
