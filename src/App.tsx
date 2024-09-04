@@ -18,6 +18,7 @@ export default function App() {
           <Container>3 col layout</Container>
         </div> */}
         <VideoCarousel />
+        <div className="h-[300vh]"></div>
       </main>
     </>
   );
