@@ -1,6 +1,11 @@
-
-export const FadeIn = () => {
+import { motion } from "framer-motion" 
+type Props = {
+    children: React.ReactNode
+}
+export const FadeIn = ({ children }: Props) => {
   return (
-    <div>Fade-in</div>
+    <motion.div>
+        {children}
+    </motion.div>
   )
 }
