@@ -21,7 +21,9 @@ export const VideoCarousel = () => {
             {/* ==== carousel ==== */}
             <div className="space-y-3">
                 <SmallVideoCarousel movies={randomMoviesSet1} />
-                <SmallVideoCarousel movies={randomMoviesSet2} />
+                <div className="[--duration:80s] [--carousel-offset: -32px]">
+                    <SmallVideoCarousel movies={randomMoviesSet2} />
+                </div>
             </div>
         </div>
     )
@@ -30,7 +32,7 @@ export const VideoCarousel = () => {
 const SmallVideoCarousel = ({ movies }: { movies: Movie[] }) => {
     return (
         <div className="overflow-clip">
-            <div className="flex gap-3 animate-carousel-move">
+            <div className="flex gap-3 animate-carousel-move relative left-[var(--carousel-offset, 0px)]">
                 {
                     movies.map((movie, i) => (
                         <div className="w-[30vh] shrink-0 aspect-video" key={`${movie.name}-${i}`}>
