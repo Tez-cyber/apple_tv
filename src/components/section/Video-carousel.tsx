@@ -17,16 +17,18 @@ export const VideoCarousel = () => {
     )
 }
 
-const SmallVideoCarousel = ({movies}: {movies: Movie[]}) => {
+const SmallVideoCarousel = ({ movies }: { movies: Movie[] }) => {
     return (
-        <div className="flex gap-3">
+        <div className="flex gap-3 overflow-clip">
             {
                 movies.map((movie, i) => (
-                    <img
-                        key={`${movie.name}-${i}`}
-                        src={movie.poster}
-                        alt={movie.name}
-                    />
+                    <div className="w-[30vh] shrink-0" key={`${movie.name}-${i}`}>
+                        <img
+                            className="w-full h-full object-cover rounded-xl"
+                            src={movie.poster}
+                            alt={movie.name}
+                        />
+                    </div>
                 ))
             }
         </div>
