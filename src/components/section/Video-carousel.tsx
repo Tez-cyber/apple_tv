@@ -4,11 +4,17 @@ export const VideoCarousel = () => {
     return (
         <div className="bg-bgDark">
             {/* ==== Large first section ==== */}
-            {/* <div className="">
-                <div className=""><img src={movies[0].poster} alt={movies[0].name} /></div>
-                <div className=""><img src={movies[0].poster} alt={movies[0].name} /></div>
-                <div className=""><img src={movies[0].poster} alt={movies[0].name} /></div>
-            </div> */}
+            <div className="flex gap-5 mb-5 overflow-clip">
+                <div className="shrink-0 w-[60vw] rounded-2xl overflow-clip">
+                    <img className="w-full h-full object-cover" src={movies[0].poster} alt={movies[0].name} />
+                </div>
+                <div className="shrink-0 w-[60vw] rounded-2xl overflow-clip">
+                    <img className="w-full h-full object-cover" src={movies[1].poster} alt={movies[0].name} />
+                </div>
+                <div className="shrink-0 w-[60vw] rounded-2xl overflow-clip">
+                    <img className="w-full h-full object-cover" src={movies[2].poster} alt={movies[0].name} />
+                </div>
+            </div>
 
             {/* ==== carousel ==== */}
             <SmallVideoCarousel movies={randomMoviesSet1} />
