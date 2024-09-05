@@ -30,6 +30,12 @@ export default {
       "4xl": ["2.5rem", "1.1"], //== 40px
       "5xl": ["4.5rem", "1.05"], //== 72px
     },
+    keyframes: {
+      
+    },
+    animation: {
+      "carousel-move": "carousel-move var(--duration, 80s) infinite"
+    },
     extend: {},
   },
   plugins: [],
