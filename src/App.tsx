@@ -10,7 +10,7 @@ export default function App() {
       <Header />
       {/* ==== Project layout */}
       <main className="">
-        <div className="bg-bgDark">
+        <div className="bg-bgDark relative z-10">
           <Hero />
           <Usps />
         </div>

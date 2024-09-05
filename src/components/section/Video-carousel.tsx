@@ -4,16 +4,18 @@ export const VideoCarousel = () => {
     return (
         <div className="bg-bgDark pb-8">
             {/* ==== Large first section ==== */}
-            <div className="overflow-clip">
-                <div className="flex gap-5 mb-5 left-1/2 -translate-x-1/2">
-                    <div className="shrink-0 w-[60vw] aspect-video rounded-2xl overflow-clip">
-                        <img className="w-full h-full object-cover" src={movies[0].poster} alt={movies[0].name} />
-                    </div>
-                    <div className="shrink-0 w-[60vw] aspect-video rounded-2xl overflow-clip">
-                        <img className="w-full h-full object-cover" src={movies[1].poster} alt={movies[0].name} />
-                    </div>
-                    <div className="shrink-0 w-[60vw] aspect-video rounded-2xl overflow-clip">
-                        <img className="w-full h-full object-cover" src={movies[2].poster} alt={movies[0].name} />
+            <div className="overflow-clip h-[300vh] mt-[-100vh]">
+                <div className="h-screen sticky top-0">
+                    <div className="flex gap-5 mb-5 left-1/2 -translate-x-1/2">
+                        <div className="shrink-0 w-[60vw] aspect-video rounded-2xl overflow-clip">
+                            <img className="w-full h-full object-cover" src={movies[0].poster} alt={movies[0].name} />
+                        </div>
+                        <div className="shrink-0 w-[60vw] aspect-video rounded-2xl overflow-clip">
+                            <img className="w-full h-full object-cover" src={movies[1].poster} alt={movies[0].name} />
+                        </div>
+                        <div className="shrink-0 w-[60vw] aspect-video rounded-2xl overflow-clip">
+                            <img className="w-full h-full object-cover" src={movies[2].poster} alt={movies[0].name} />
+                        </div>
                     </div>
                 </div>
             </div>
