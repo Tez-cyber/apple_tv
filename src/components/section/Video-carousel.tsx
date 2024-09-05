@@ -64,10 +64,16 @@ export const VideoCarousel = () => {
                         <motion.div style={{ scale }} className="relative shrink-0 w-[60vw] aspect-video rounded-2xl overflow-clip">
                             <img className="w-full h-full object-cover" src={movies[1].poster} alt={movies[0].name} />
                             {/* == video title ==  */}
-                            <div className="absolute flex text-light items-center text-lg justify-between p-5 bottom-0 left-0 w-full">
+                            <motion.div
+                                variants={{
+                                    active: { opacity: 1 },
+                                    inactive: { opacity: 0 },
+                                }}
+                                className="absolute flex text-light items-center text-lg justify-between p-5 bottom-0 left-0 w-full"
+                            >
                                 <p className="">Best video title over</p>
                                 <Button>Watch now</Button>
-                            </div>
+                            </motion.div>
                         </motion.div>
                         {/* === third image === */}
                         <motion.div style={{ opacity: postersOpacity, x: posterTranslateXRight }} className="shrink-0 w-[60vw] aspect-video rounded-2xl overflow-clip">
@@ -82,7 +88,7 @@ export const VideoCarousel = () => {
                 variants={{
                     active: { opacity: 1, y: 0 },
                     inactive: { opacity: 0, y: 20 }
-                }} 
+                }}
                 transition={{ duration: 0.4 }}
                 className="space-y-3"
             >
