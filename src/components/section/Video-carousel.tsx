@@ -107,7 +107,7 @@ const SmallVideoCarousel = ({ movies }: { movies: Movie[] }) => {
             <div className="flex gap-3 animate-carousel-move relative left-[var(--carousel-offset, 0px)]">
                 {
                     movies.map((movie, i) => (
-                        <div className="w-[30vh] shrink-0 aspect-video" key={`${movie.name}-${i}`}>
+                        <div className="w-[50vw] shrink-0 aspect-video md:w-[23vw]" key={`${movie.name}-${i}`}>
                             <img
                                 className="w-full h-full object-cover rounded-xl"
                                 src={movie.poster}
