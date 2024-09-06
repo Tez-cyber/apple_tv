@@ -57,11 +57,11 @@ export const VideoCarousel = () => {
                 <div className="h-screen sticky top-0 flex items-center">
                     <div className="flex gap-5 relative left-1/2 -translate-x-1/2">
                         {/* === first image === */}
-                        <motion.div style={{ opacity: postersOpacity, x: posterTranslateXLeft }} className="shrink-0 w-[60vw] rounded-2xl overflow-clip aspect-[9/16] md:aspect-video">
+                        <motion.div style={{ opacity: postersOpacity, x: posterTranslateXLeft }} className="shrink-0 rounded-2xl overflow-clip aspect-[9/16] w-[300px] md:aspect-video md:w-[60vw]">
                             <img className="w-full h-full object-cover" src={movies[0].poster} alt={movies[0].name} />
                         </motion.div>
                         {/* === second image === */}
-                        <motion.div style={{ scale }} className="relative shrink-0 w-[60vw] rounded-2xl overflow-clip aspect-[9/16] md:aspect-video">
+                        <motion.div style={{ scale }} className="relative shrink-0 rounded-2xl overflow-clip aspect-[9/16] w-[300px] md:aspect-video md:w-[60vw]">
                             <img className="w-full h-full object-cover" src={movies[1].poster} alt={movies[0].name} />
                             {/* == video title ==  */}
                             <motion.div
@@ -76,7 +76,7 @@ export const VideoCarousel = () => {
                             </motion.div>
                         </motion.div>
                         {/* === third image === */}
-                        <motion.div style={{ opacity: postersOpacity, x: posterTranslateXRight }} className="shrink-0 w-[60vw] rounded-2xl overflow-clip aspect-[9/16] md:aspect-video">
+                        <motion.div style={{ opacity: postersOpacity, x: posterTranslateXRight }} className="shrink-0 rounded-2xl overflow-clip aspect-[9/16] w-[300px] md:aspect-video md:w-[60vw]">
                             <img className="w-full h-full object-cover" src={movies[2].poster} alt={movies[0].name} />
                         </motion.div>
                     </div>
