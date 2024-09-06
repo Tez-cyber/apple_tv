@@ -69,7 +69,7 @@ export const VideoCarousel = () => {
                                     active: { opacity: 1 },
                                     inactive: { opacity: 0 },
                                 }}
-                                className="absolute flex text-light items-center text-lg justify-between p-5 bottom-0 left-0 w-full"
+                                className="absolute flex flex-col text-light items-center text-lg p-5 bottom-0 left-0 w-full gap-4 md:gap-0 md:justify-between md:flex-row"
                             >
                                 <p className="">Best video title over</p>
                                 <Button>Watch now</Button>
