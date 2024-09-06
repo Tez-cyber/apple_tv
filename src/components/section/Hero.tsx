@@ -36,7 +36,7 @@ export const Hero = () => {
                     animate="hidden"
                     viewport={{ amount: .95 }}
                 >
-                    <h1 className="text-5xl font-bold mb-10">
+                    <h1 className="text-4xl font-bold mb-10 md:text-5xl">
                         All Apple Originals. <br />
                         Only on Apple TV+.
                     </h1>
@@ -44,7 +44,7 @@ export const Hero = () => {
                         Stream now
                     </Button>
                     <p className="flex items-center font-semibold">
-                        Watch on the <FaApple /> apple
+                        Watch on the <span className="flex items-center px-1"><FaApple />tv</span> app
                     </p>
                 </motion.div>
             </Container>
